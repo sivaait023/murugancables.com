@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BSNL-BILL</title>
+    <meta lang="ENG">
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="100">
+    <link rel="icon" href="C:\xampp\htdocs\php-vscode\images.png" type="image/icon">
+    <link  rel="stylesheet" href="bill.css">
+</head>
+
+<body>
+    <div>
+    <img src="img.png" height="100px" width="100px">
+    <h1>murugan cables</h1>
+    <h2>bsnl bill</h2>
+    <form action="form.php" target="_self" method="POST">
+        <lable for="name" class="styled" >NAME OF APPLICANT    </lable>
+         <input type="text" id="name" name="NAME" class="applicant" required> <br>
+        <lable for="tel" class="styled">broad-band number                </lable> 
+        <input type="tel"  pattern="[0-9]{5}-[0-9]{6}" placeholder="00000-000000" name="phone"  required><br>
+        <lable for="date" class="styled" >Date of install</lable>
+        <input type="date" class="dating" name="date"  placeholder="dd/mm/yyyy" max="14-12-2020" required   ><br>
+        <label class="styled"  >wiring charges</label> 
+        <button onclick="myFunction()" >Netamount</button>
+        <input type="number" id="meter" name="meter"  required>
+        <input type="number" id="cost" name="cost" required><br>
+        <label class="styled">NET AMOUNT:</label>
+        <input type="number" id="netcost" name="netamount" readonly><br>
+        <label class="styled" for="installs">Installation charges</LABEL>
+        <input type="number" id="inscharge" name="installs" required><br>
+        <label class="styled" for="mdm">Modem charges(optional)</label>
+        <input type="number" id="modem" name="mdm" ><br>
+        <button type="submit" class="submit">submit</button>
+        <input type="reset" value="Reset" >
+         
+
+    </form>
+    </div>
+    <script>
+        function myFunction(){
+            var s1,s2,add;
+            s1=prompt();
+            s2=prompt();
+            document.getElementById("meter").value=s1;
+            document.getElementById("cost").value=s2;
+            add=s1*s2;
+            document.getElementById("netcost").value=add;
+    
+}
+    </script>
+</body>
+
+</html>

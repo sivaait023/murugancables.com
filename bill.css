@@ -1,0 +1,43 @@
+
+body{
+    background:url(cable.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 5.5;
+    margin: auto;
+    padding:100px;
+    text-align: center;
+}
+h1,h2{
+    color:red;
+    text-transform: capitalize;
+    text-shadow:2px 2px 3px yellow;
+}
+h2{color: chocolate;}
+ form{
+     background-color: rgba(44, 40, 40, 0.3);
+     padding:20px;
+     text-align: center;
+ }
+ :hover form{
+     background-color:rgba(15, 15, 15, 0.3) ;
+ }
+input{
+     height:auto;
+     width:auto ;
+     display: inline-block;
+ }
+ .dating{
+      text-decoration:none;
+
+ }
+ .styled{
+    text-transform: uppercase;
+    padding: 20px;
+    width:240px;
+    display: inline-block;
+    color: whitesmoke;
+    text-align:left;
+    
+ }
+
